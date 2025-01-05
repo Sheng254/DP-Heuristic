@@ -23,9 +23,9 @@ The following table summarises the three algorithms for solving QKP:
 
 | **Algorithm**          | **Description**                                                                                                      | **Key Features**                                                                                                     | **Complexity**                       |
 |------------------------|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| **Classical DP** | A classical dynamic programming approach for solving QKP with backtracking to retrieve the selected items.           | - Standard DP approach with a 2D table.<br>- Backtracking to track selected items.<br>- Suitable for small instances. | Time complexity: O(n * capacity) <br> Space complexity: O(n * capacity)  |
-| **Algorithm 2**  | A heuristic DP algorithm that improves upon the classical DP by tracking quadratic profit interactions.              | - Uses a 2D DP table.<br>- Incorporates quadratic profit matrix interactions.<br>- Offers better performance on larger instances. | Time complexity: O(n * capacity) <br> Space complexity: O(n * capacity)  |
-| **Algorithm 3**  | A more optimised DP heuristic that approximates quadratic profits with improved time and space efficiency.            | - Optimised with 1D DP table.<br>- Performs backward updates for efficiency.<br>- Best time and space complexity among the three. | Time complexity: O(n * capacity) <br> Space complexity: O(capacity)      |
+| **Classical DP** | A classical dynamic programming approach for solving QKP with backtracking to retrieve the selected items.           | - Standard DP approach with a 2D table.<br>- Backtracking to track selected items.<br>- Suitable for small instances. | - Time complexity: O(n * capacity) <br>- Space complexity: O(n * capacity)  |
+| **Algorithm 2**  | A heuristic DP algorithm that improves upon the classical DP by tracking quadratic profit interactions.              | - Uses a 2D DP table.<br>- Incorporates quadratic profit matrix interactions.<br>- Offers better performance on larger instances. | - Time complexity: O(n * capacity) <br>- Space complexity: O(n * capacity)  |
+| **Algorithm 3**  | A more optimised DP heuristic that approximates quadratic profits with improved time and space efficiency.            | - Optimised with 1D DP table.<br>- Performs backward updates for efficiency.<br>- Best time and space complexity among the three. | - Time complexity: O(n * capacity) <br>- Space complexity: O(capacity)      |
 
 <br>
 
@@ -108,7 +108,7 @@ Each test case evaluates the performance and correctness of the algorithms based
 
 <br>
 
-### Performance and Complexity Analysis
+## Performance and Complexity Analysis
 All 3 algorithms achieved correctness as they produced the same profit and selected items indices, which aligned with the expected ones.
 
 In general, **Algorithm 3** is the most efficient as it requires the least time and memory across most test cases. Its optimised approach minimises resource usage, which leads to faster execution and lower memory consumption.
@@ -121,4 +121,5 @@ In general, **Algorithm 3** is the most efficient as it requires the least time 
 
 ## Reference to the Research Paper
 The implementation of Algorithms 2 and 3 is based on the work presented in the following paper:
+
 **Franklin Djeumou Fomeni, Adam N. Letchford (2014).** *A Dynamic Programming Heuristic for the Quadratic Knapsack Problem.* INFORMS Journal on Computing, 26(1):173-182. [https://doi.org/10.1287/ijoc.2013.0555](https://doi.org/10.1287/ijoc.2013.0555)
